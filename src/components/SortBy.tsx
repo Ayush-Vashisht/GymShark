@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 const SortBy = () => {
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
   const [checked, setChecked] = useState(2);
   return (
     <div className="">

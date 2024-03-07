@@ -1,3 +1,4 @@
+import Gender from "./Gender";
 import SortBy from "./SortBy";
 
 const Sidebar = () => {
@@ -8,7 +9,7 @@ const Sidebar = () => {
         <span className="text-sm text-gray-400">Clear All</span>
       </span>
       <SortBy/>
-      <span>GENDER</span>
+      <Gender/>
       <span>SIZE</span>
       <span>FEATURES</span>
       <span>FIT</span>
