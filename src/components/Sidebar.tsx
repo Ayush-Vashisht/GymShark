@@ -1,4 +1,5 @@
 import Gender from "./Gender";
+import Size from "./Size";
 import SortBy from "./SortBy";
 
 const Sidebar = () => {
@@ -10,7 +11,7 @@ const Sidebar = () => {
       </span>
       <SortBy/>
       <Gender/>
-      <span>SIZE</span>
+      <Size/>
       <span>FEATURES</span>
       <span>FIT</span>
       <span>COLOR</span>
