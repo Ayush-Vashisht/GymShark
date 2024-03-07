@@ -4,6 +4,7 @@ import Features from "./Features";
 import Fit from "./Fit";
 import Gender from "./Gender";
 import Pattern from "./Pattern";
+import Price from "./Price";
 import Size from "./Size";
 import SortBy from "./SortBy";
 
@@ -22,7 +23,7 @@ const Sidebar = () => {
       <Color />
       <Pattern />
       <Discount />
-      <span>PRICE</span>
+      <Price />
     </div>
   );
 };
