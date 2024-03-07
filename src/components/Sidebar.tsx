@@ -1,4 +1,5 @@
 import Color from "./Color";
+import Discount from "./Discount";
 import Features from "./Features";
 import Fit from "./Fit";
 import Gender from "./Gender";
@@ -19,8 +20,8 @@ const Sidebar = () => {
       <Features />
       <Fit />
       <Color />
-      <Pattern/>
-      <span>DISCOUNT</span>
+      <Pattern />
+      <Discount />
       <span>PRICE</span>
     </div>
   );
