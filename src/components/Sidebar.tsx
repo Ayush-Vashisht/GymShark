@@ -2,6 +2,7 @@ import Color from "./Color";
 import Features from "./Features";
 import Fit from "./Fit";
 import Gender from "./Gender";
+import Pattern from "./Pattern";
 import Size from "./Size";
 import SortBy from "./SortBy";
 
@@ -18,7 +19,7 @@ const Sidebar = () => {
       <Features />
       <Fit />
       <Color />
-      <span>PATTERN</span>
+      <Pattern/>
       <span>DISCOUNT</span>
       <span>PRICE</span>
     </div>
