@@ -1,3 +1,4 @@
+import Features from "./Features";
 import Gender from "./Gender";
 import Size from "./Size";
 import SortBy from "./SortBy";
@@ -12,7 +13,7 @@ const Sidebar = () => {
       <SortBy/>
       <Gender/>
       <Size/>
-      <span>FEATURES</span>
+      <Features/>
       <span>FIT</span>
       <span>COLOR</span>
       <span>PATTERN</span>

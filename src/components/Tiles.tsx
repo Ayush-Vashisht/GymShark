@@ -6,7 +6,7 @@ const Tiles = ({ children }: Props) => {
   const [selected, setSelected] = useState(false);
   return (
     <div
-      className={`border border-gary-400 p-4 w-24  text-center items-center justify-center ${
+      className={`border border-gary-400 p-4 w-full  text-center items-center justify-center ${
         selected ? "bg-black text-white" : ""
       }`}
       onClick={() => setSelected(!selected)}
