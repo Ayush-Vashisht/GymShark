@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 const Gender = () => {
-    const [open, setOpen] = useState(true);
+    const [open, setOpen] = useState(false);
     return (
         <div className="">
           <span className="flex items-center justify-between mb-2 text-xl font-semibold">

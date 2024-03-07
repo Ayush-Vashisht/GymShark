@@ -1,65 +1,32 @@
 import { useState } from "react";
 import Tiles from "./Tiles";
-
-const sizeArr: string[] = [
-  "XXS",
-  "XS",
-  "S",
-  "M",
-  "L",
-  "XL",
-  "XXL",
-
-  "3XL",
-
-  "1 Size",
-
-  "No Size",
-
-  "10",
-
-  "32B/C",
-
-  "32D/DD",
-
-  "32E/F",
-
-  "34B/C",
-
-  "34D/DD",
-
-  "36B/C",
-
-  "38B/C",
-
-  "40B/C",
-
-  "M 10 / W 11",
-
-  "M 11 / W 12",
-
-  "M 12 / W 13",
-
-  "M 13 / W 14",
-
-  "M 5 / W 6",
-
-  "M 6 / W 7",
-
-  "M 7 / W 8",
-
-  "M 8 / W 9",
-
-  "M 9 / W 10",
-
-  "ONE - SIZE",
+const clothingFitsAndSupport = [
+  "Slim Fit",
+  "Body Fit",
+  "Regular Fit",
+  "Oversized Fit",
+  "Oversized",
+  "*Final Sale - Non Returnable*",
+  "Regular",
+  "Light Support",
+  "Medium Support",
+  "Compression Fit",
+  "High Support",
+  "Muscle Fit",
+  "Extreme Oversized Fit",
+  "Baselayer",
+  "Extreme-Oversized",
+  "Straight Leg",
+  "Tall",
+  "Short",
+  "Underwear",
 ];
-const Size = () => {
+const Fit = () => {
   const [open, setOpen] = useState(false);
   return (
     <div className="">
       <span className="flex items-center justify-between mb-2 text-xl font-semibold">
-        Size
+        FIT
         {open ? (
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -95,9 +62,9 @@ const Size = () => {
         )}
       </span>
       {open && (
-        <div className="grid grid-cols-2 gap-y-2   w-full">
-          {sizeArr.map((arr, index) => (
-            <Tiles key={index}>{arr}</Tiles>
+        <div className="grid grid-cols-1  gap-y-2 items-center justify-center text-center">
+          {clothingFitsAndSupport?.map((fit, index) => (
+            <Tiles key={index}>{fit}</Tiles>
           ))}
         </div>
       )}
@@ -105,4 +72,4 @@ const Size = () => {
   );
 };
 
-export default Size;
+export default Fit;

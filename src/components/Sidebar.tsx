@@ -1,4 +1,6 @@
+import Color from "./Color";
 import Features from "./Features";
+import Fit from "./Fit";
 import Gender from "./Gender";
 import Size from "./Size";
 import SortBy from "./SortBy";
@@ -10,12 +12,12 @@ const Sidebar = () => {
         FILTER & SORT
         <span className="text-sm text-gray-400">Clear All</span>
       </span>
-      <SortBy/>
-      <Gender/>
-      <Size/>
-      <Features/>
-      <span>FIT</span>
-      <span>COLOR</span>
+      <SortBy />
+      <Gender />
+      <Size />
+      <Features />
+      <Fit />
+      <Color />
       <span>PATTERN</span>
       <span>DISCOUNT</span>
       <span>PRICE</span>

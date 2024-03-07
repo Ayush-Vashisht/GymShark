@@ -1,65 +1,24 @@
 import { useState } from "react";
-import Tiles from "./Tiles";
 
-const sizeArr: string[] = [
-  "XXS",
-  "XS",
-  "S",
-  "M",
-  "L",
-  "XL",
-  "XXL",
-
-  "3XL",
-
-  "1 Size",
-
-  "No Size",
-
-  "10",
-
-  "32B/C",
-
-  "32D/DD",
-
-  "32E/F",
-
-  "34B/C",
-
-  "34D/DD",
-
-  "36B/C",
-
-  "38B/C",
-
-  "40B/C",
-
-  "M 10 / W 11",
-
-  "M 11 / W 12",
-
-  "M 12 / W 13",
-
-  "M 13 / W 14",
-
-  "M 5 / W 6",
-
-  "M 6 / W 7",
-
-  "M 7 / W 8",
-
-  "M 8 / W 9",
-
-  "M 9 / W 10",
-
-  "ONE - SIZE",
+const colors = [
+  "Black",
+  "Blue",
+  "Brown",
+  "Green",
+  "Grey",
+  "Orange",
+  "Pink",
+  "Purple",
+  "Red",
+  "White",
+  "Yellow",
 ];
-const Size = () => {
+const Color = () => {
   const [open, setOpen] = useState(false);
   return (
     <div className="">
       <span className="flex items-center justify-between mb-2 text-xl font-semibold">
-        Size
+        COLOR
         {open ? (
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -95,9 +54,20 @@ const Size = () => {
         )}
       </span>
       {open && (
-        <div className="grid grid-cols-2 gap-y-2   w-full">
-          {sizeArr.map((arr, index) => (
-            <Tiles key={index}>{arr}</Tiles>
+        <div className="grid grid-cols-2  gap-2 items-center justify-center text-center">
+          {colors?.map((color, index) => (
+            <div key={index}>
+              <div
+                className="border rounded-full w-6 h-6  p-2 "
+                style={{
+                  backgroundColor: color,
+                  width: "100px",
+                  height: "100px",
+                  margin: "10px",
+                }}
+              ></div>
+              <span>{color}</span>
+            </div>
           ))}
         </div>
       )}
@@ -105,4 +75,4 @@ const Size = () => {
   );
 };
 
-export default Size;
+export default Color;

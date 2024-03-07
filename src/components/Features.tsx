@@ -16,7 +16,7 @@ const features = [
   "Windproof",
 ];
 const Features = () => {
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
   return (
     <div className="">
       <span className="flex items-center justify-between mb-2 text-xl font-semibold">
@@ -56,7 +56,7 @@ const Features = () => {
         )}
       </span>
       {open && (
-        <div className="grid grdi-cols-1  gap-y-2 items-center justify-center text-center">
+        <div className="grid grid-cols-1  gap-y-2 items-center justify-center text-center">
           {features?.map((feature, index) => (
             <Tiles key={index}>{feature}</Tiles>
           ))}
