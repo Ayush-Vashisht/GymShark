@@ -4,7 +4,7 @@ import Footer from "./pages/Footer";
 
 export default function App() {
   return (
-    <div className="">
+    <div className="r">
       <Header />
       <Body />
       <Footer />
