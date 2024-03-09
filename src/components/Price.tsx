@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import Tiles from "./Tiles";
 
 const price_ranges = [
